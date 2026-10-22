@@ -1,0 +1,7 @@
+# ESCOPO REAL E RESULTADOS NUNCA ENTRAM NO HISTÓRICO.
+# scope.txt tem os domínios autorizados de um programa; output/ tem achados
+# de um alvo real. Publicar qualquer um dos dois quebra o sigilo do programa
+# e pode expor vulnerabilidade ainda não corrigida de terceiro.
+scope.txt
+output/
+*.log

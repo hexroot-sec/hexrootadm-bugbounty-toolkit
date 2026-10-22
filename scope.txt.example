@@ -1,0 +1,4 @@
+# Um domínio/host por linha — só os que você tem autorização para testar.
+# Copie para scope.txt e monte no container (veja README.md).
+example.com
+sub.example.com
