@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Blockchain didatica (so stdlib). Mostra encadeamento, proof-of-work e imutabilidade."""
-import hashlib, time, json
+import hashlib, time, json, sys
 
 class Bloco:
     def __init__(self, indice, dados, hash_anterior):
@@ -49,8 +49,12 @@ class Blockchain:
                 return False, f"bloco #{i}: nao aponta para o anterior"
         return True, "cadeia integra"
 
-print(f"=== Minerando (dificuldade = 4 zeros a esquerda) ===")
-bc = Blockchain(dificuldade=4)
+# dificuldade pela linha de comando (padrao 4). Hardware fraco: 3-4. Bom processador: 5-6+.
+DIF = int(sys.argv[1]) if len(sys.argv) > 1 else 4
+print(f"=== Minerando (dificuldade = {DIF} zeros a esquerda) ===")
+if DIF >= 6:
+    print("  AVISO: dificuldade alta exige um bom processador; pode levar minutos.")
+bc = Blockchain(dificuldade=DIF)
 print(f"  bloco #0 (genesis) hash={bc.cadeia[0].hash[:16]}...")
 bc.adicionar({"de": "Alice", "para": "Bob", "valor": 10})
 bc.adicionar({"de": "Bob", "para": "Carol", "valor": 3})
