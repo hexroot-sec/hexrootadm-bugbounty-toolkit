@@ -2,6 +2,8 @@
 
 > ⚠️ Leia o **[AVISO.md](AVISO.md)** antes de usar: material exclusivamente educacional, uso só autorizado.
 
+> 🔎 **OSINT:** veja a lista de buscadores para recon em [comandos/osint-search-engines.md](comandos/osint-search-engines.md).
+
 Container Docker com um pipeline de reconhecimento pronto para bug bounty **autorizado**: enumera subdomínios, verifica quais estão vivos, coleta URLs históricas e escaneia vulnerabilidades conhecidas com templates do Nuclei.
 
 Inspirado na organização de dicas do [KingOfBugBountyTips](https://github.com/KingOfBugbounty/KingOfBugBountyTips) (metodologia e categorias) e em boas práticas de projetos como [Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) (gate de validação, escopo explícito do que a skill não cobre), reimplementado do zero como pipeline automatizado em container, sem copiar conteúdo de nenhum dos dois.
