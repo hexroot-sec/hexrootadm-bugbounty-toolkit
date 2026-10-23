@@ -5,6 +5,8 @@
 > 🔎 **OSINT:** veja a lista de buscadores para recon em [comandos/osint-search-engines.md](comandos/osint-search-engines.md).
 >
 > 🤖 **AI Security:** trilha de estudo de segurança de LLMs em [comandos/trilha-ai-security.md](comandos/trilha-ai-security.md).
+>
+> ⛓️ **Blockchain com Python:** trilha didática em [comandos/blockchain-python.md](comandos/blockchain-python.md).
 
 Container Docker com um pipeline de reconhecimento pronto para bug bounty **autorizado**: enumera subdomínios, verifica quais estão vivos, coleta URLs históricas e escaneia vulnerabilidades conhecidas com templates do Nuclei.
 
